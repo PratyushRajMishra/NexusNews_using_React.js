@@ -76,11 +76,14 @@ static propTypes = {
                 description={element.description ? element.description : ''}
                 imageUrl={element.urlToImage}
                 newsUrl={element.url}
+                author={element.author}
+                date={element.publishedAt}
+                source={element.source.name}
               />
             </div>
           ))}
         </div>
-        <div className='container d-flex justify-content-between'>
+        <div className='container d-flex justify-content-between my-3'>
           <button
             disabled={this.state.page <= 1}
             type='button'
